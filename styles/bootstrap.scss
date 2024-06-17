@@ -1,49 +1,29 @@
-//@import "../node_modules/bootstrap/scss/functions";
-
-//@import "../node_modules/bootstrap/scss/variables";
-//@import "../node_modules/bootstrap/scss/mixins";
-//@import "../node_modules/bootstrap/scss/maps";
-//@import "../node_modules/bootstrap/scss/root";
-//@import "../node_modules/bootstrap/scss/reboot";
-//@import "../node_modules/bootstrap/scss/containers";
-//@import "../node_modules/bootstrap/scss/grid";
-//@import "../node_modules/bootstrap/scss/bootstrap-utilities";
-//@import "../node_modules/bootstrap/scss/accordion";
-//@import "../node_modules/bootstrap/scss/modal";
-//@import "../node_modules/bootstrap/scss/type";
-//@import "../node_modules/bootstrap/scss/utilities";
-//@import "../node_modules/bootstrap/scss/transitions";
-//
-//
-// Custom.scss
-// Option B: Include parts of Bootstrap
-
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 
-// 2. Include any default variable overrides here
-
-// 3. Include remainder of required Bootstrap stylesheets
+$primary: #286ba6;
+$secondary: #dee2e6;
 $container-max-widths: (
   sm: 540px,
   md: 700px,
-  lg: 700px,
-  xl: 700px,
-  xxl: 700px,
+  lg: 701px,
+  xl: 702px,
+  xxl: 703px,
 );
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// 4. Include any optional Bootstrap components as you like
 @import "../node_modules/bootstrap/scss/maps";
+$theme-colors: map-merge($theme-colors, (
+        "primary": $primary,
+        "secondary": $secondary
+));
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/bootstrap-utilities";
-
-// 5. Add additional custom code here
-
-@import "../node_modules/bootstrap-icons";
