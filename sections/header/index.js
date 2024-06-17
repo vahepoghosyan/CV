@@ -1,7 +1,7 @@
 export const header = `
       <div class="w-25">
         <img
-          src="./assets/images/avatar.jpg"
+          src="./avatar.jpg"
           alt="profile"
           class="rounded-circle w-100"
         />
